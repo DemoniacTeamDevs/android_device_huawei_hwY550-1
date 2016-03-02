@@ -17,9 +17,9 @@
 # Product-specific compile-time definitions.
 #
 # inherit from the proprietary version
--include vendor/huawei/g620s/BoardConfigVendor.mk
+-include vendor/huawei/y550/BoardConfigVendor.mk
 
-LOCAL_PATH := device/huawei/g620s
+LOCAL_PATH := device/huawei/y550
 
 # DPM NSRM Feature
 TARGET_LDPRELOAD := libNimsWrap.so
@@ -49,7 +49,7 @@ AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
 AUDIO_FEATURE_DEEP_BUFFER_RINGTONE := true
 BOARD_USES_ALSA_AUDIO := true
-COMMON_GLOBAL_CFLAGS += -DHUAWEI_SOUND_PARAM_PATH=\"/system/etc/sound_param/g620s_l01l02\"
+COMMON_GLOBAL_CFLAGS += -DHUAWEI_SOUND_PARAM_PATH=\"/system/etc/sound_param/y550\"
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -63,7 +63,7 @@ BOARD_USES_LEGACY_MMAP := true
 TARGET_USE_VENDOR_CAMERA_EXT := true
 
 # CMHW
-BOARD_HARDWARE_CLASS := device/huawei/g620s/cmhw
+BOARD_HARDWARE_CLASS := device/huawei/y550/cmhw
 
 # Enables CSVT
 TARGET_USES_CSVT := true
@@ -99,7 +99,7 @@ TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
-TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_g620s.c
+TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_y550.c
 
 # adb has root
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
@@ -115,8 +115,8 @@ BOARD_KERNEL_PAGESIZE    := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8916
-TARGET_KERNEL_CONFIG := g620s_defconfig
-TARGET_SELINUX_CONFIG := g620s_defconfig
+TARGET_KERNEL_CONFIG := y550_defconfig
+TARGET_SELINUX_CONFIG := y550_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 
 # Partitions
@@ -165,7 +165,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/huawei/g620s/sepolicy
+    device/huawei/y550/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     bootanim.te \
@@ -184,7 +184,7 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 MALLOC_IMPL := dlmalloc
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := g620s,G620S,hwg620s,hwG620S,G620S-L01
+TARGET_OTA_ASSERT_DEVICE := y550,Y550,hwy550,hwY550,y550-L01
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file

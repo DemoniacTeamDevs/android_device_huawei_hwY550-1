@@ -99,29 +99,29 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "G621-TL00-user 4.4.4 GRJ90 C01B361SP01 release-keys");
         property_set("ro.build.fingerprint", "Honor/G621-TL00/hwG621-TL00:4.4.4/HonorG621-TL00/C01B361SP01:user/release-keys");
     }
-    /* G620S-UL00 */
-    else if (strstr(model, "G620S-UL") != NULL) {
-        property_set("ro.product.model", "G620S-UL00");
-        property_set("ro.product.name", "G620S-UL00");
-        property_set("ro.product.device", "G620S-UL00");
-        property_set("ro.build.product", "G620S-UL00");
+    /* y550-l01 */
+    else if (strstr(model, "y550-l01") != NULL) {
+        property_set("ro.product.model", "y550-l01");
+        property_set("ro.product.name", "y550-l01");
+        property_set("ro.product.device", "y550-l01");
+        property_set("ro.build.product", "y550-l01");
         property_set("persist.radio.multisim.config", "dsds");
         property_set("persist.dsds.enabled", "true");
         property_set("ro.telephony.default_network", "22");
         property_set("ro.config.dsds_mode", "umts_gsm");
         property_set("ro.ril.multi_rat_capable","true");
-        property_set("ro.build.description", "G620S-UL00-user 4.4.4 GRJ90 C17B246 release-keys");
-        property_set("ro.build.fingerprint", "Huawei/G620S-UL00/hwG620S-UL00:4.4.4/HuaweiG620S-UL00/C17B246:user/release-keys");
+        property_set("ro.build.description", "y550-l01-user 4.4.4 GRJ90 C17B246 release-keys");
+        property_set("ro.build.fingerprint", "Huawei/y550-l01/hwy550-l01:4.4.4/HuaweiGy550-l01/C17B246:user/release-keys");
     }
     /* G620S-L01 */
-    else if (strstr(model, "G620S-L01") != NULL) {
-        property_set("ro.product.model", "G620S-L01");
-        property_set("ro.product.name", "G620S-L01");
-        property_set("ro.product.device", "G620S-L01");
-        property_set("ro.build.product", "G620S-L01");
+    else if (strstr(model, "Y550-L03") != NULL) {
+        property_set("ro.product.model", "Y550-L03");
+        property_set("ro.product.name", "Y550-L03");
+        property_set("ro.product.device", "Y550-L03");
+        property_set("ro.build.product", "Y550-L03");
         property_set("ro.telephony.default_network", "9");
-        property_set("ro.build.description", "G620S-L01-user 4.4.4 GRJ90 C00B380 release-keys");
-        property_set("ro.build.fingerprint", "Huawei/G620S-L01/hwG620S-L01:4.4.4/HuaweiG620S-L01/C00B380:user/release-keys");
+        property_set("ro.build.description", "Y550-L03-user 4.4.4 GRJ90 C00B380 release-keys");
+        property_set("ro.build.fingerprint", "Huawei/Y550-L03/hwY550-L03:4.4.4/HuaweiY550-L03/C00B380:user/release-keys");
     }
     /* Che1-CL20 */
     else if (strstr(model, "Che1-CL20") != NULL) {

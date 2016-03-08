@@ -113,7 +113,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "y550-l01-user 4.4.4 GRJ90 C17B246 release-keys");
         property_set("ro.build.fingerprint", "Huawei/y550-l01/hwy550-l01:4.4.4/HuaweiGy550-l01/C17B246:user/release-keys");
     }
-    /* G620S-L01 */
+    /* Y550-L03 */
     else if (strstr(model, "Y550-L03") != NULL) {
         property_set("ro.product.model", "Y550-L03");
         property_set("ro.product.name", "Y550-L03");

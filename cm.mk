@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/huawei/y550/full_y550.mk)
+$(call inherit-product, device/huawei/hwY550/full_hwY550.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 854
@@ -21,5 +21,5 @@ TARGET_SCREEN_WIDTH := 480
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
-PRODUCT_NAME := cm_y550
-PRODUCT_DEVICE := y550
+PRODUCT_NAME := cm_hwY550
+PRODUCT_DEVICE := hwY550

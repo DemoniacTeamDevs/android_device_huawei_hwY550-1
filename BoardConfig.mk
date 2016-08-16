@@ -1,4 +1,4 @@
-# Copyright (C) 2011 The Android Open-Source Project
+# Copyright (C) 2016 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,9 +17,9 @@
 # Product-specific compile-time definitions.
 #
 # inherit from the proprietary version
--include vendor/huawei/y550/BoardConfigVendor.mk
+-include vendor/huawei/hwY550/BoardConfigVendor.mk
 
-LOCAL_PATH := device/huawei/y550
+LOCAL_PATH := device/huawei/hwY550
 
 # DPM NSRM Feature
 TARGET_LDPRELOAD := libNimsWrap.so
@@ -49,7 +49,6 @@ AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
 AUDIO_FEATURE_DEEP_BUFFER_RINGTONE := true
 BOARD_USES_ALSA_AUDIO := true
-COMMON_GLOBAL_CFLAGS += -DHUAWEI_SOUND_PARAM_PATH=\"/system/etc/sound_param/y550\"
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -63,7 +62,7 @@ BOARD_USES_LEGACY_MMAP := true
 TARGET_USE_VENDOR_CAMERA_EXT := true
 
 # CMHW
-BOARD_HARDWARE_CLASS := device/huawei/y550/cmhw
+BOARD_HARDWARE_CLASS := device/huawei/hwY550/cmhw
 
 # Enables CSVT
 TARGET_USES_CSVT := true
@@ -101,12 +100,6 @@ TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_y550.c
 
-# adb has root
-ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
-ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
-ADDITIONAL_DEFAULT_PROPERTIES += ro.allow.mock.location=1
-ADDITIONAL_DEFAULT_PROPERTIES += persist.sys.usb.config=mass_storage
-
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
 BOARD_KERNEL_SEPARATED_DT := true
@@ -115,8 +108,8 @@ BOARD_KERNEL_PAGESIZE    := 2048
 BOARD_KERNEL_TAGS_OFFSET := 0x80000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8916
-TARGET_KERNEL_CONFIG := y550_defconfig
-TARGET_SELINUX_CONFIG := y550_defconfig
+TARGET_KERNEL_CONFIG := cm_hwY550_defconfig
+TARGET_SELINUX_CONFIG := cm_hwY550_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 
 # Partitions
@@ -158,7 +151,7 @@ TARGET_RIL_VARIANT := caf
 PROTOBUF_SUPPORTED := true
 
 # Offmode Charging
- +BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(LOCAL_PATH)/charger/images
+BOARD_HEALTHD_CUSTOM_CHARGER_RES := $(LOCAL_PATH)/charger/images
 
 # FM
 AUDIO_FEATURE_ENABLED_FM := true
@@ -168,7 +161,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-    device/huawei/y550/sepolicy
+    device/huawei/hwY550/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     bootanim.te \
@@ -187,7 +180,7 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 MALLOC_IMPL := dlmalloc
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := y550,Y550,hwy550,hwY550,Y550-L01
+TARGET_OTA_ASSERT_DEVICE := hwY550,hwy550,Y550-01,Y550-L02,Y550-L03
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file

@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,12 +17,12 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from c8817d device
-$(call inherit-product, device/huawei/y550/y550.mk)
+# Inherit from hwY550 device
+$(call inherit-product, device/huawei/hwY550/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := full_y550
-PRODUCT_DEVICE := y550
+PRODUCT_NAME := full_hwY550
+PRODUCT_DEVICE := hwY550
 PRODUCT_BRAND := Huawei
 PRODUCT_MANUFACTURER := HUAWEI
-PRODUCT_MODEL := Y550-L01
+PRODUCT_MODEL := Huawei Y550 LTE

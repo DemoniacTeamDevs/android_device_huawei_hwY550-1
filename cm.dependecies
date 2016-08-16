@@ -10,11 +10,6 @@
     "target_path": "vendor/huawei/y550"
   },
   {
-    "remote":      "hb72k",
-    "repository":  "hb72k/android_device_huawei_y550-2",
-    "target_path": "device/huawei/y550"
-  },
-  {
     "repository": "android_external_mm-dash",
     "target_path": "external/mm-dash"
   },

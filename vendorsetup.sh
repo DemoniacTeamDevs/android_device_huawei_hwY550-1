@@ -1,1 +1,1 @@
-add_lunch_combo cm_y550-userdebug
+add_lunch_combo cm_hwY550-userdebug

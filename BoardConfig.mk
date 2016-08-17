@@ -1,4 +1,5 @@
-# Copyright (C) 2016 The Android Open-Source Project
+#
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# config.mk
-#
-# Product-specific compile-time definitions.
-#
-# inherit from the proprietary version
+
 -include vendor/huawei/hwY550/BoardConfigVendor.mk
 
 LOCAL_PATH := device/huawei/hwY550
@@ -98,7 +95,7 @@ TARGET_CONTINUOUS_SPLASH_ENABLED := true
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
-TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_y550.c
+TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_hwY550.c
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive

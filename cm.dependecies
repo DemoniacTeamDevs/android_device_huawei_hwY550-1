@@ -1,23 +1,21 @@
 [
   {
-    "remote":      "hb72k",
-    "repository":  "hb72k/android_kernel_huawei_msm8916-lp",
+    "remote":      "github",
+    "repository":  "HUAWEI-Y635/android_kernel_huawei_hwY635",
     "target_path": "kernel/huawei/msm8916"
   },
   {
-    "remote":      "hb72k",
-    "repository":  "hb72k/android_vendor_huawei_y550-2",
-    "target_path": "vendor/huawei/y550"
+    "remote":      "github",
+    "repository":  "CarlosArriagaCM/android_vendor_huawei_hwY550",
+    "target_path": "vendor/huawei/hwY550"
   },
   {
-    "repository": "android_external_mm-dash",
-    "target_path": "external/mm-dash"
-  },
-  {
-    "repository": "android_hardware_qcom_fm",
+    "remote":      "github",
+    "repository": "CyanogenMod/android_hardware_qcom_fm",
     "target_path": "hardware/qcom/fm"
   },
   {
-    "repository": "android_device_qcom_common",
+    "remote":      "github",
+    "repository": "CyanogenMod/android_device_qcom_common",
     "target_path": "device/qcom/common"
   }

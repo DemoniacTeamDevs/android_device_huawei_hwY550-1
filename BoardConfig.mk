@@ -174,7 +174,7 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 MALLOC_IMPL := dlmalloc
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hwY550,hwy550,Y550-01,Y550-L02,Y550-L03
+TARGET_OTA_ASSERT_DEVICE := hwY550,hwy550,Y550-L01,Y550-L02,Y550-L03,Y550
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file

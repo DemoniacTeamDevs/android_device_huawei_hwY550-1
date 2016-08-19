@@ -14,14 +14,14 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/huawei/hwY550/full_hwY550.mk)
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/maxi/config/common_full_phone.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/orion/config/common_full_phone.mk)
 
-PRODUCT_NAME := maxi_hwY550
+$(call inherit-product, device/huawei/hwY550/full_hwY550.mk)
+
+PRODUCT_NAME := orion_hwY550
 PRODUCT_DEVICE := hwY550

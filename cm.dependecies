@@ -1,21 +1,14 @@
 [
   {
-    "remote":      "github",
-    "repository":  "HUAWEI-Y635/android_kernel_huawei_hwY635",
+    "repository":  "android_kernel_huawei_hwY635",
     "target_path": "kernel/huawei/msm8916"
   },
   {
-    "remote":      "github",
-    "repository":  "CarlosArriagaCM/android_vendor_huawei_hwY550",
-    "target_path": "vendor/huawei/hwY550"
-  },
-  {
-    "remote":      "github",
-    "repository": "CyanogenMod/android_hardware_qcom_fm",
+    "repository": "android_hardware_qcom_fm",
     "target_path": "hardware/qcom/fm"
   },
   {
-    "remote":      "github",
-    "repository": "CyanogenMod/android_device_qcom_common",
+    "repository": "android_device_qcom_common",
     "target_path": "device/qcom/common"
   }
+]

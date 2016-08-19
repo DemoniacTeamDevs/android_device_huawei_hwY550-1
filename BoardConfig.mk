@@ -98,7 +98,7 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_hwY550.c
 
 # Kernel
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=disable
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_BASE        := 0x80000000
 BOARD_KERNEL_PAGESIZE    := 2048
@@ -174,7 +174,7 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 MALLOC_IMPL := dlmalloc
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := hwY550,hwy550,Y550-L01,Y550-L02,Y550-L03,Y550
+TARGET_OTA_ASSERT_DEVICE := hwY550,hwy550,Y550-L01,Y550-L02,Y550-L03,Y550,y550
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
